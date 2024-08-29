@@ -1,0 +1,14 @@
+appId: com.example.nudgetest_demoqa1
+app: /Users/mayukhdutta/Desktop/Maestro/app-release.apk
+
+---
+
+# TC-08: Start the Quiz Flow Successfully
+
+- launchApp: com.example.nudgetest_demoqa1
+- tapOn: 
+    id: "quiz_section_button"
+- tapOn: 
+    id: "start_quiz_button"
+- assertVisible: 
+    id: "quiz_question_1_view"

@@ -1,0 +1,18 @@
+appId: com.example.nudgetest_demoqa1
+app: /Users/mayukhdutta/Desktop/Maestro/app-release.apk
+
+---
+
+# TC-02: Cancel Story Playback
+
+- launchApp: com.example.nudgetest_demoqa1
+- tapOn: 
+    id: "story_section_button"
+- tapOn: 
+    id: "trigger_story_button"
+- waitFor: 
+    id: "story_playback_view"
+- tapOn: 
+    id: "cancel_story_button"
+- assertNotVisible: 
+    id: "story_playback_view"

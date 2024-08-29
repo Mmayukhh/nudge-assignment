@@ -1,0 +1,22 @@
+appId: com.example.nudgetest_demoqa1
+app: /Users/mayukhdutta/Desktop/Maestro/app-release.apk
+
+---
+
+# TC-09: Submit Quiz Answers Successfully
+
+- launchApp: {}
+- tapOn: 
+    id: "quiz_section_button"
+- tapOn: 
+    id: "start_quiz_button"
+- inputText: 
+    id: "quiz_answer_field_1"
+    text: "Answer1"
+- inputText: 
+    id: "quiz_answer_field_2"
+    text: "Answer2"
+- tapOn: 
+    id: "submit_quiz_button"
+- assertVisible: 
+    id: "quiz_results_view"

@@ -1,0 +1,18 @@
+appId: com.example.nudgetest_demoqa1
+app: /Users/mayukhdutta/Desktop/Maestro/app-release.apk
+
+---
+
+#TC-12: Confirm User Deletion Action
+
+- launchApp: com.example.nudgetest_demoqa1
+- tapOn: 
+    id: "account_settings_button"
+- tapOn: 
+    id: "delete_user_button"
+- assertVisible: 
+    id: "confirm_delete_dialog"
+- tapOn: 
+    id: "confirm_delete_button"
+- assertVisible: 
+    id: "login_screen_view"

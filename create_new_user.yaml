@@ -1,0 +1,23 @@
+appId: com.example.nudgetest_demoqa1
+app: /Users/mayukhdutta/Desktop/Maestro/app-release.apk
+
+---
+
+#TC-04: Create a New User Successfully
+
+- launchApp: com.example.nudgetest_demoqa1
+- tapOn: 
+    id: "create_user_button"
+- inputText: 
+    id: "username_field"
+    text: "testuser"
+- inputText: 
+    id: "email_field"
+    text: "testuser@example.com"
+- inputText: 
+    id: "password_field"
+    text: "password123"
+- tapOn: 
+    id: "create_user_submit_button"
+- assertVisible: 
+    id: "home_screen_view"

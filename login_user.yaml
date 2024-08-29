@@ -1,0 +1,20 @@
+appId: com.example.nudgetest_demoqa1
+app: /Users/mayukhdutta/Desktop/Maestro/app-release.apk
+
+---
+
+#TC-05: Log in an Existing User Successfully
+
+- launchApp: com.example.nudgetest_demoqa1
+- tapOn: 
+    id: "login_button"
+- inputText: 
+    id: "email_field"
+    text: "testuser@example.com"
+- inputText: 
+    id: "password_field"
+    text: "password123"
+- tapOn: 
+    id: "login_submit_button"
+- assertVisible: 
+    id: "home_screen_view"

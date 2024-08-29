@@ -1,0 +1,14 @@
+appId: com.example.nudgetest_demoqa1
+app: /Users/mayukhdutta/Desktop/Maestro/app-release.apk
+
+---
+
+# TC-10: View Quiz Results
+
+- launchApp: com.example.nudgetest_demoqa1
+- tapOn: 
+    id: "quiz_section_button"
+- tapOn: 
+    id: "view_quiz_results_button"
+- assertVisible: 
+    id: "quiz_results_view"

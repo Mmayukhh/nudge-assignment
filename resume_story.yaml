@@ -1,0 +1,19 @@
+appId: com.example.nudgetest_demoqa1
+app: /Users/mayukhdutta/Desktop/Maestro/app-release.apk
+
+---
+# TC-03: Resume Story Playback After Interruption
+
+- launchApp: com.example.nudgetest_demoqa1
+- tapOn: 
+    id: "story_section_button"
+- tapOn: 
+    id: "trigger_story_button"
+- waitFor: 
+    id: "story_playback_view"
+- interruptApp: {}
+- resumeApp: com.example.nudgetest_demoqa1
+- tapOn: 
+    id: "resume_story_button"
+- assertVisible: 
+    id: "story_playback_view"

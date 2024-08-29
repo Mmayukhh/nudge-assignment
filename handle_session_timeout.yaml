@@ -1,0 +1,24 @@
+appId: com.example.nudgetest_demoqa1
+app: /Users/mayukhdutta/Desktop/Maestro/app-release.apk
+
+---
+
+#TC-06: Handle Session Timeout During User Interaction
+
+- launchApp: com.example.nudgetest_demoqa1
+- tapOn: 
+    id: "login_button"
+- inputText: 
+    id: "email_field"
+    text: "testuser@example.com"
+- inputText: 
+    id: "password_field"
+    text: "password123"
+- tapOn: 
+    id: "login_submit_button"
+- wait: 
+    seconds: 600  # Simulate session timeout (adjust time as needed)
+- tapOn: 
+    id: "some_action_button"
+- assertVisible: 
+    id: "login_screen_view"
